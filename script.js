@@ -1,10 +1,10 @@
 // ===== TYPING ANIMATION =====
 const typingTexts = [
-    'Full Stack Developer',
-    'UI/UX Enthusiast',
-    'Problem Solver',
-    'Tech Explorer',
-    'Creative Coder'
+    'Mobile App Developer',
+    'Flutter Developer',
+    '.NET MAUI Developer',
+    'Cross-Platform Expert',
+    'UI/UX Enthusiast'
 ];
 
 let textIndex = 0;
