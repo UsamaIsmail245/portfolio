@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Usama Ismail | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Usama<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-up">
+                <i class="fas fa-sparkles"></i> Welcome to my portfolio
+            </div>
+            <h1 class="hero-title animate-fade-up delay-1">
+                Hi, I'm <span class="gradient-text">Muhammad Usama Ismail</span>
+            </h1>
+            <div class="hero-typing">
+                <span class="typing-prefix">I'm a </span>
+                <span class="typing-text" id="typingText"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description animate-fade-up delay-2">
+                Passionate developer crafting elegant digital experiences 
+                with clean code and creative design.
+            </p>
+            <div class="hero-cta animate-fade-up delay-3">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="hero-socials animate-fade-up delay-4">
+                <a href="https://www.linkedin.com/in/m-usama-ismail-6327bb277/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/UsamaIsmail245" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:usama.ismail@ebitlogix.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <div class="about-image-placeholder">
+                            <i class="fas fa-user"></i>
+                            <span>Your Photo</span>
+                        </div>
+                    </div>
+                    <div class="about-image-decoration"></div>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-subtitle">A passionate developer who loves to create</h3>
+                    <p class="about-text">
+                        I'm Muhammad Usama Ismail, a dedicated Full Stack Developer with a passion 
+                        for building beautiful, functional, and user-centered digital experiences. 
+                        I am always looking for new and innovative ways to bring my clients' visions to life.
+                    </p>
+                    <p class="about-text">
+                        I believe that design is about more than just making things look pretty — 
+                        it's about solving problems and creating intuitive, enjoyable experiences for users.
+                        Whether I'm working on a website, mobile app, or other digital product, I bring 
+                        my commitment to design excellence and user-centered thinking to every project I work on.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                    </div>
+                    <a href="resume.pdf" class="btn btn-primary" download>
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #E44D26;">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #1572B6;">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #F7DF1E;">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #61DAFB;">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #339933;">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #3776AB;">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #F05032;">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #4DB33D;">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Recent Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Live" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" aria-label="View Code" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured online store with cart, payment integration, and admin dashboard.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Live" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" aria-label="View Code" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A beautiful, responsive portfolio website with stunning animations and dark mode.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Live" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" aria-label="View Code" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Chat Application</h3>
+                        <p>Real-time messaging app with WebSocket support, user authentication, and file sharing.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Socket.io</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Live" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" aria-label="View Code" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager</h3>
+                        <p>A productivity app with drag-and-drop task management, deadlines, and team collaboration.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3>Full Stack Developer</h3>
+                        <h4>Freelance / Self-Employed</h4>
+                        <p>Building web applications and digital solutions for clients. Working with modern tech stacks including React, Node.js, and cloud services.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge education"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="timeline-date">2022 - Present</span>
+                        <h3>Bachelor's in Computer Science</h3>
+                        <h4>University</h4>
+                        <p>Studying computer science with focus on software engineering, data structures, algorithms, and web technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge"><i class="fas fa-code"></i></div>
+                        <span class="timeline-date">2023</span>
+                        <h3>Web Development Intern</h3>
+                        <h4>Tech Company</h4>
+                        <p>Gained hands-on experience in front-end development, participated in agile sprints, and contributed to production-level projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Talk</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>usama.ismail@ebitlogix.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/m-usama-ismail-6327bb277/" target="_blank" rel="noopener noreferrer">M Usama Ismail</a></p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="subject" name="subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <div class="input-wrapper">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Usama<span class="logo-bracket">/&gt;</span>
+                </a>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/m-usama-ismail-6327bb277/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/UsamaIsmail245" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:usama.ismail@ebitlogix.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-text">&copy; 2026 Muhammad Usama Ismail. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
