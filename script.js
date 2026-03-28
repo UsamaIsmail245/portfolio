@@ -220,13 +220,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ===== TILT EFFECT =====
-document.querySelectorAll('[data-tilt]').forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const rotateX = (e.clientY - rect.top - rect.height / 2) / 15;
-        const rotateY = (rect.width / 2 - (e.clientX - rect.left)) / 15;
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
-    });
+// ===== TILT EFFECT (desktop only) =====
+const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+if (!isTouchDevice) {
+    document.querySelectorAll('[data-tilt]').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const rotateX = (e.clientY - rect.top - rect.height / 2) / 15;
+            const rotateY = (rect.width / 2 - (e.clientX - rect.left)) / 15;
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+        });
     card.addEventListener('mouseleave', () => { card.style.transform = ''; });
-});
+    });
+}
