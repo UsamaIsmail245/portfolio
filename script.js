@@ -230,6 +230,6 @@ if (!isTouchDevice) {
             const rotateY = (rect.width / 2 - (e.clientX - rect.left)) / 15;
             card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
         });
-    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+        card.addEventListener('mouseleave', () => { card.style.transform = ''; });
     });
 }

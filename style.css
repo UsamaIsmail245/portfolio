@@ -1157,10 +1157,21 @@ img {
 
 /* Large Desktop (1440px+) */
 @media (min-width: 1440px) {
-    .container { max-width: 1300px; }
-    .hero-title { font-size: 4.5rem; }
-    .skills-grid { grid-template-columns: repeat(4, 1fr); }
-    .projects-grid { grid-template-columns: repeat(3, 1fr); }
+    .container {
+        max-width: 1300px;
+    }
+
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Laptop / Small Desktop */
@@ -1665,12 +1676,32 @@ img {
 
 /* Print styles */
 @media print {
-    .navbar, .hero-particles, .cursor-glow, .hero-scroll,
-    .theme-toggle, .hamburger { display: none; }
-    body { background: #fff; color: #000; }
-    .gradient-text { -webkit-text-fill-color: #333; }
-    .section { padding: 20px 0; }
-    .project-overlay { display: none; }
+
+    .navbar,
+    .hero-particles,
+    .cursor-glow,
+    .hero-scroll,
+    .theme-toggle,
+    .hamburger {
+        display: none;
+    }
+
+    body {
+        background: #fff;
+        color: #000;
+    }
+
+    .gradient-text {
+        -webkit-text-fill-color: #333;
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    .project-overlay {
+        display: none;
+    }
 }
 
 ::selection {
