@@ -148,18 +148,19 @@ statNumbers.forEach(num => counterObserver.observe(num));
 // ===== PARTICLES =====
 const particlesContainer = document.getElementById('particles');
 function createParticles() {
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 150; i++) {
         const particle = document.createElement('div');
+        const size = Math.random() * 5 + 1;
         particle.style.cssText = `
             position: absolute;
-            width: ${Math.random() * 4 + 1}px;
-            height: ${Math.random() * 4 + 1}px;
-            background: rgba(108, 92, 231, ${Math.random() * 0.3 + 0.1});
+            width: ${size}px;
+            height: ${size}px;
+            background: rgba(108, 92, 231, ${Math.random() * 0.4 + 0.1});
             border-radius: 50%;
             left: ${Math.random() * 100}%;
             top: ${Math.random() * 100}%;
-            animation: float ${Math.random() * 10 + 10}s ease-in-out infinite;
-            animation-delay: ${Math.random() * 5}s;
+            animation: float ${Math.random() * 15 + 8}s ease-in-out infinite;
+            animation-delay: ${Math.random() * 8}s;
         `;
         particlesContainer.appendChild(particle);
     }
